@@ -10,3 +10,7 @@ demo1();
 import utils from "lib/utils";
 console.log(utils);
 utils.hello();
+
+// if (module.hot) {
+//   module.hot.accept();
+// }
