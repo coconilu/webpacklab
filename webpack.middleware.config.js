@@ -87,6 +87,6 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(),
-    ...makePlugins()
+    // ...makePlugins()
   ]
 };
