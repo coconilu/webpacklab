@@ -3,6 +3,7 @@ const fs = require("fs");
 const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HelloPlugin = require("./plugins/HelloPlugin");
 
 function multipleEntry() {
   const projectsBaseDir = path.resolve(__dirname, "projects");
@@ -87,6 +88,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(),
+    new HelloPlugin()
     // ...makePlugins()
   ]
 };
